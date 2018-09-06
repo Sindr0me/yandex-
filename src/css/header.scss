@@ -1,0 +1,42 @@
+.header {
+  flex: 1 0 auto;
+  max-height: 65px;
+  min-height: 65px;
+  display: flex;
+  align-items: center;
+  list-style: none;
+
+  .header__logo{
+    width: 108px;
+    height: 27px;
+    background-image: url(../img/yandex_logo.png);
+
+  }
+
+  .header__hamburger {
+    display:none;
+  }
+  .header__nav {
+
+    .header__nav__menu__item {
+      margin-left: 28px;
+      display: inline-block;
+      opacity: 0.6;
+      font-weight: Bold;
+      font-size: 16px;
+      color: #333333;
+      line-height: 20px;
+    }
+    .header__nav__menu__item--active {
+      opacity: 1;
+    }
+
+    .header__nav__menu__item:nth-child(1) {
+      margin-left: 40px;
+    }
+
+  }
+
+}
+
+

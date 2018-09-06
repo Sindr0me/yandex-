@@ -1,0 +1,44 @@
+
+html, body {
+  @import 'abstracts.scss';
+  @import 'components.scss';
+  @import 'components-mobile.scss';
+  font-family: Arial;
+  color: #333333;
+  min-height: 100%;
+  margin: 0px;
+  padding: 0px;
+  font-size: 1em;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .wrapper {
+    a {
+      text-decoration: none;
+      color:inherit;
+    }
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    width: 94%;
+
+    @import 'header.scss';
+    @import 'main.scss';
+    @import 'footer.scss';
+
+    //tablet
+    @import 'header-tablet.scss';
+    @import 'main-tablet.scss';
+    @import 'footer-tablet.scss';
+
+    //mobile
+
+    @import 'header-mobile.scss';
+    @import 'main-mobile.scss';
+    @import 'footer-mobile.scss';
+
+  }
+}
+
